@@ -1,6 +1,12 @@
-# VoyaLuxe - Premium Full-Stack Tourism Management System
+# Tourism Management System
 
-**VoyaLuxe** is a premium, full-stack travel-tech startup platform specializing in luxury tourism experiences across **Tamil Nadu** and **Kerala**. Designed with a modern dark-themed glassmorphism aesthetic, it is fully optimized for desktop, tablet, and mobile views. 
+## 🔗 Live Deployment Links
+* **Frontend Web App (Vercel)**: `https://[YOUR-VERCEL-APP-NAME].vercel.app`
+* **Backend API Server (Render)**: `https://[YOUR-RENDER-APP-NAME].onrender.com`
+
+---
+
+**Tourism Management System** is a premium, full-stack travel-tech startup platform specializing in luxury tourism experiences across **Tamil Nadu** and **Kerala**. Designed with a modern dark-themed glassmorphism aesthetic, it is fully optimized for desktop, tablet, and mobile views. 
 
 This project is structured for a Computer Science Engineering portfolio, showcasing secure JWT session handling, SQL relationships, modular REST endpoints, and dynamic administrative dashboards.
 
