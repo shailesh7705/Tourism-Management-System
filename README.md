@@ -2,7 +2,7 @@
 
 ## 🔗 Live Deployment Links
 * **Frontend Web App (Vercel)**: `https://[YOUR-VERCEL-APP-NAME].vercel.app`
-* **Backend API Server (Render)**: `https://[YOUR-RENDER-APP-NAME].onrender.com`
+* **Backend API Server (Render)**: https://tourism-management-system-uhiz.onrender.com
 
 ---
 

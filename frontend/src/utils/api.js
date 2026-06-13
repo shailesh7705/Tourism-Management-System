@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'https://tourism-management-system-uhiz.onrender.com/api';
 
 async function request(endpoint, options = {}) {
   const token = localStorage.getItem('token');
