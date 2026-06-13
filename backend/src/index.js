@@ -26,6 +26,15 @@ initDb().then(async () => {
   }
 });
 
+// Root endpoint to verify server status
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Tourism Management System API is running successfully.',
+    status: 'online',
+    version: '1.0.0'
+  });
+});
+
 // ----------------------------------------------------
 // 1. AUTHENTICATION ENDPOINTS
 // ----------------------------------------------------
