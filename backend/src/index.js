@@ -12,8 +12,19 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Initialize Database Schema on start
-initDb();
+// Initialize Database Schema and Auto-Seed if empty
+initDb().then(async () => {
+  try {
+    const destCount = await db.get('SELECT COUNT(*) as count FROM destinations');
+    if (destCount && destCount.count === 0) {
+      console.log('No destinations found. Triggering database auto-seed...');
+      const { seed } = require('./seed');
+      await seed(false); // seed without process.exit
+    }
+  } catch (err) {
+    console.error('Database auto-seeding check failed:', err.message);
+  }
+});
 
 // ----------------------------------------------------
 // 1. AUTHENTICATION ENDPOINTS

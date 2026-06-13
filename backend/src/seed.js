@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const { db, initDb } = require('./db');
 
-async function seed() {
+async function seed(exitAfter = true) {
   console.log('Seeding database...');
   await initDb();
 
@@ -266,10 +266,14 @@ async function seed() {
   } catch (err) {
     console.error('Error seeding database:', err);
   } finally {
-    process.exit(0);
+    if (exitAfter) {
+      process.exit(0);
+    }
   }
 }
 
+module.exports = { seed };
+
 if (require.main === module) {
-  seed();
+  seed(true);
 }
