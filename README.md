@@ -1,7 +1,7 @@
 # Tourism Management System
 
 ## 🔗 Live Deployment Links
-* **Frontend Web App (Vercel)**: `https://[YOUR-VERCEL-APP-NAME].vercel.app`
+* **Frontend Web App (Vercel)**: https://tourism-management-system-nine.vercel.app
 * **Backend API Server (Render)**: https://tourism-management-system-uhiz.onrender.com
 
 ---
